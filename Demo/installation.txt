@@ -1,0 +1,5 @@
+# Step - 1 Create a python envirnoment
+# step - 2 install rasa and spacy
+# step - 3 python -m spacy download en_core_web_md
+# step - 4 python -m spacy link en_core_web_md en
+# step - 5 pip install rasa-x --extra-index-url https://pypi.rasa.com/simple

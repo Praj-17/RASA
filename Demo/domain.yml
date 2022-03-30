@@ -1,0 +1,115 @@
+session_config:
+  session_expiration_time: 60.0
+  carry_over_slots_to_new_session: true
+
+
+
+
+intents:
+- greet
+- buy_phones_laptop
+- latest_news_phones_laptop
+- give_information
+- goodbye
+- budget_available
+
+entities:
+- category
+- ram 
+- battery
+- camera
+- budget
+
+slots:
+  category:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: category
+  ram:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: ram
+  battery:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: battery
+  camera:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: camera
+  budget:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: budget
+
+
+reponses:
+  - utter_how_can_I_help:
+  - text: Welcome. I'm your shopping bot. I can help you with finding a phone or laptop and also provide the latest news about them.
+
+  - utter_ask_ram:
+  - text: How much GB RAM are you looking for?
+  - text: What RAM Configuration you want>
+  - text: How much GB RAM laptop will suit you?
+
+  - utter_ask_camera:
+  - text: what megapixel camera are you looking for?
+  - text: How much megapixel camera are you looking for?
+
+  - utter_ask_battery:
+  - text: How much battery capacity are you looking in the mobile?
+
+  - utter_ask_budget:
+  - text: What's your budget?
+  - text: How much are you willing to spend?
+
+  - utter_wrong_budget:
+  - text: Please enter the budget in USD and below 4000
+
+  - utter_wrong_ram:
+  - text: Please input a legit  ram
+  - utter_wrong_battery:
+  - text: Please input a legit  battery
+
+  - utter_wrong_camera:
+  - text: Please input a legit  camera
+
+  
+  
+  - utter_goodbye: 
+  - text: It was nice talking to you
+  - text : Goodbye.
+  - text : Have a nice day.
+  - text : Had a sweet time with you.
+  - text : Thankyou.
+  - text : BBye.
+
+actions:
+  - utter_how_can_I_help
+  - utter_ask_battery
+  - utter_goodbye
+  - utter_ask_camera
+  - utter_ask_ram
+  - action_search
+  - action_show_latest_news
+  - utter_greet
+  - utter_iambot
+  - utter_ask_budget
+  - utter_wrong_camera
+  - utter_wrong_battery
+  - utter_wrong_ram
+  - utter_wrong_budget
+
+  forms:
+  - product_search_form
+
+  
+
+
+  
+

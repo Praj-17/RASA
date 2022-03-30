@@ -1,0 +1,75 @@
+version: "3.0"
+
+nlu:
+
+- intent: greet
+  examples: |
+    -hi
+    -hello
+    -hey
+    -good morning
+    -how are you
+    -hola
+    -good morning
+    -whats up
+
+
+- intent: buy_phone_laptop
+  examples: |
+    - I would like to buy a [phone](category)
+    - I would Like to buy a [laptop](category)
+    - I wanted to purchase a [phone](category)
+    - Can you recommend me a [laptop](category)
+    - Please suggest me a [laptop](category)
+    - Please suggest me a[phone](category)
+    - Would you mind suggesting me a [laptop](category) please
+    - How about suggesting me a [laptop](category)
+    - How about suggesting me a[phone](category)
+    - give me some recomendations for [mobile](category)
+    -can you suggest a [laptop](category)
+    - i'm intrested in purchasing a [phone](category)
+    - wanna buy a [refrigerator](category)
+    - wanted to have a look at the [washing machine](category)
+    - show me [air conditioner](category)
+
+
+
+- intent: latest_news_phones_laptops
+  examples: |
+    - Which is the latest [phone](category)
+    - Can you tell me what is trending about [phone](category)
+    - Tell me some good news about [laptop](category)
+    - Whats going on in the tech world for [laptop](category)
+    - any new releases for [mobile](category)
+    - show me the latest news for [mobile](category)
+    -update me on the [mobile](category) news
+
+
+
+- intent: goodbye
+  examples: |
+    - goodbye
+    - bye
+    - c u
+    - see you
+    - tata
+    - bbye
+    - see you later
+
+- intent: give_information
+  examples: |
+    - I'm looking for [8 GB RAM](RAM)
+    - I would like to have [10 GB RAM](RAM)
+    - I want a camera of [64 megapixel](camera)
+    - I was looking for [400 mah](battery) battery backup
+    - [3500 mah](battery)
+    - around [16 GB](RAM)
+    - Well around [50 megapixel](camera)
+- intent: budget_available
+  examples: |
+    - my budget is around [400 usd](budget)
+    - my total spending on the phone can be [250 usd](budget)
+    - I can shell out approximately [450 usd](budget)
+    - Well its around[500 usd] (budget)
+    
+
