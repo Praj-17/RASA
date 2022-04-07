@@ -54,7 +54,7 @@ reponses:
 
   - utter_ask_ram:
   - text: How much GB RAM are you looking for?
-  - text: What RAM Configuration you want>
+  - text: What RAM Configuration you want?
   - text: How much GB RAM laptop will suit you?
 
   - utter_ask_camera:
