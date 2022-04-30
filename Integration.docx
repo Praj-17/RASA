@@ -1,0 +1,28 @@
+Integration with Whatsapp
+- There are several ways in which we can integrate rasa with Whatsapp.
+- The most popular way to integrate rasa with whatsapp is TWILIO.
+- This website needs a paid subscription and then we can operate SMS, whatsapp , telegram and all other channels.
+
+
+-----------Integration with TWILIO---------------
+You can deploy a Rasa Open Source assistant to WhatsApp through Twilio. However, to do so, you have to have a WhatsApp Business profile. Associate your Whatsapp Business profile with the phone number you purchased through Twilio to access the Twilio API for WhatsApp
+
+1. Go to the webiste https://www.twilio.com/
+2. Sign in with your Twilio account
+3. Create a new project
+3. Once the project is setup you would see the 
+4. Click on the WhatsApp Business profile you want to use
+5. Click on the API tab
+6. Click on the API key tab
+7. Click on the Create new API key button
+8. Enter a name for the API key
+9. Click on the Create button
+10. Copy the API key and paste it in the rasa.yml file
+11. Copy the API secret and paste it in the rasa.yml file
+12. Copy the Whatsapp number and paste it in the rasa.yml file
+13. Copy the Twilio number and paste it in the rasa.yml file
+14. Copy the Twilio SID and paste it in the rasa.yml file
+15. Copy the Twilio Auth Token and paste it in the rasa.yml file
+
+
+
