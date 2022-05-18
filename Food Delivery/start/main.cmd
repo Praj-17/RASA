@@ -1,1 +1,0 @@
-conda activate bss && python -m main.py

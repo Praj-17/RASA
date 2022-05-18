@@ -2,7 +2,11 @@ version: "2.0"
 
 intents:
  - chitchat
-
+ - order_food
+entities:
+- item
+- location
+- quantity
 responses:
   utter_chitchat/greet:
   - text: "Hey! How are you?"
@@ -15,14 +19,13 @@ responses:
   - text: "Hello"
   - text: "Hi there, how can I help"
   - text: "Hi there, how can I help you?"
+
   utter_chitchat/unhappy_mood:
   - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
   - text: "Oops!, can I help?"
   - text: "oh!, sorry to hear that. How can I help"
   - text: How can I amaze you?"
   - text: Let me refresh your mood then, have a look here"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
   - text: "I am sorry to hear that. How can I help"
   - text: "Something went wrong?"
   - text: "Is there anything I can help you with?" 
@@ -115,8 +118,68 @@ responses:
   - text: "Anything else sir ?"
   - text: "Anything else you want me to do sir ?"
   - text: "what's the plan now?"
+
+  utter_ask_item:
+  - text: what Item would you like to order?
+  - text: what item should I order?
+  - text: what do you want to eat?
+
+  utter_ask_quantity:
+  - text: how much quantity you want?
+  - text: what quantity you want?
+
+  utter_ask_location:
+  - text: where to deliver?
+  - text: where do you want to deliver?
+  - text: please mention your complete address?
+
+
+  utter_wrong_item:
+  - text: Item not in the list. Please input a legit  item
+  utter_wrong_quantity:
+  - text: Please input a legit  quantity
+
+  utter_wrong_location:
+  - text: Please input a legit  location 
+
+  utter_submit:
+  - text: Order placed successfully.
+
 actions:
-  -utter_chitchat
+  - utter_chitchat
+  - utter_ask_item
+  - utter_ask_location
+  - utter_ask_quantity
+  - utter_submit
+  - utter_wrong_item
+  - utter_wrong_quantity
+  - utter_wrong_location
+  - action_food_order_form
+  - food_order_form
+
+
+forms:
+  - food_order_form:
+      ignored_intents: 
+      - chitchat
+      required_slots:
+        item:
+          type: text
+          entity: item
+        quantity:
+          type: text
+          entity: quantity
+        location:
+          type: text
+          entity: location
+slots:
+  item:
+    type: text
+  quantity:
+    type: text
+  location:
+    type: text
+   
 
 session_config:
   session_expiration_time: 60

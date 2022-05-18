@@ -48,7 +48,7 @@ slots:
       entity: budget
 
 
-reponses:
+responses:
   - utter_how_can_I_help:
   - text: Welcome. I'm your shopping bot. I can help you with finding a phone or laptop and also provide the latest news about them.
 

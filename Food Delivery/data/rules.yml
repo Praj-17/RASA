@@ -5,5 +5,10 @@ rules:
   steps:
   - intent: chitchat
   - action: utter_chitchat
+- rule: Activate form
+  steps:
+  - intent: order_food
+  - action: action_food_order_form
+  - active_loop: food_order_form
 
 
