@@ -134,15 +134,17 @@ nlu:
     - no 
     - not so sure
     - impossible
+
+
 - intent: order_food
   examples: |
-   - I would like to order [3](quantity) [pav bhaji](item) at [tilekar nagar](location)
+    - I would like to order [3](quantity) [pav bhaji](item) at [tilekar nagar](location)
     - I would Like to order [2](quantity) [sandwich](item) at  [lane no 14, parvati colony](location)
     - I wanted to order [a](quantity)[biryani](item) at  [modern colony , shivaji nagar](location)
-    - Can you order me [a](quantity)[pav bhaji](item)  at [VIIT college, kapil nagar, kondwa budruk ](location)
+    - Can you order me [a](quantity)[pav bhaji](item)  at [VIIT college,  kapil nagar, kondwa budruk ](location)
     - Please order me [2](quantity) [biryani](item)  
-    - Please order  [5](quantity) [sandwich](item) for me at[kamthe nagar, kondhwa budruk](location)
-    - Would you mind ordering me [6](quantity) [biryani](item) at [film city, goregoan road](location) please
+    - Please order  [5](quantity) [sandwich](item) for me at[kamthe nagar,  kondhwa budruk](location)
+    - Would you mind ordering me [6](quantity) [biryani](item) at [film city,  goregoan road](location) please
     - How about ordering [4](quantity) [pav bhaji](item)
     - How about [6](quantity) [sandwich](item) near [PCCOE college](location)
     - can you please order [2](quantity) [biryani](item)
@@ -151,7 +153,7 @@ nlu:
     - wanted to taste your [sandwich](item)
     - can i get [12](quantity)[biryani](item) at [Buckinghum palace](location)
     - [1](quantity) [biryani](item) please
-    - [2](quantity) [sandwich](item) please
+ 
   
 - synonym: buy
   examples: |

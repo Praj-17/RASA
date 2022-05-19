@@ -1,0 +1,1 @@
+conda activate rasa && rasa train

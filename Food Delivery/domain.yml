@@ -146,7 +146,8 @@ responses:
   - text: Order placed successfully.
 
 actions:
-  - utter_chitchat
+  - validate_food_order_form
+  - food_order_form
   - utter_ask_item
   - utter_ask_location
   - utter_ask_quantity
@@ -154,24 +155,14 @@ actions:
   - utter_wrong_item
   - utter_wrong_quantity
   - utter_wrong_location
-  - action_food_order_form
-  - food_order_form
+  - utter_chitchat
+
+
 
 
 forms:
   - food_order_form:
-      ignored_intents: 
-      - chitchat
-      required_slots:
-        item:
-          type: text
-          entity: item
-        quantity:
-          type: text
-          entity: quantity
-        location:
-          type: text
-          entity: location
+    
 slots:
   item:
     type: text

@@ -1,0 +1,214 @@
+version: "2.0"
+
+nlu:
+- intent: chitchat/greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: chitchat/goodbye
+  examples: |
+    - cu
+    - good bye
+    - cee you later
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - have a great time
+    - that was fun
+    - quit
+    - stop
+    - exit
+- intent: chitchat/happy_mood
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: chitchat/unhappy_mood
+  examples: |
+    - my day was horrible
+    - I don't feel very well
+    - I am disappointed
+    - I'm so sad
+    - feeling unhappy
+    - worst day of my life 
+    - got panic
+    - feeling bored
+    - stressed
+    - I am so angry
+    - I am so depressed
+    - I am so tensed
+    - not good
+- intent: chitchat/bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - who are you?
+    - what is your name?
+    - what is your purpose?
+    - How can you help me?
+    - What are you here for?
+- intent: chitchat/ask_residence
+  examples: |
+    - where do you live?
+    - where do you live in?
+    - whats your residence?
+    - your city?
+    - your town?
+    - where is your house?
+    - where is your home?
+    - wheres your house?
+    - wheres your home?
+    - where is your residence?
+    - whats your home town?
+    - where do you stay?
+    - where are you from?
+    - where are we staying?
+
+- intent: chitchat/casual_query
+  examples: |
+    - how are you ?
+    - how is it going ?
+    - what is up ?
+    - is everything all right?
+    - what is going on ?
+    - you fine?
+    - you all right?
+    - how is it going on ?
+    - what are you doing ?
+    - wattcha doing?
+    - what are you up to?
+    - how you doing?
+    - how are you doing?
+  
+- intent: repeat
+  examples: |
+    - repeat
+    - repeat that please
+    - say that again please
+    - repeat that again
+    - what did you say?
+    - did you say something?
+    - couldn't understand that.
+    - i don't understand.
+    - what?
+    - what was that?
+    - please repeat that
+
+- intent: tell_details
+  examples: |
+    - My name is [Rasa](name)
+    - I am [Prajwal](name)
+    - myself [Aishu](name)
+    - [Sarthak](name) is my name
+    - [Sarthak](name) here
+    - [abhi](name) here.
+    - [abhi](name) is my name
+- intent: chitchat/affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - that's right
+    - sure
+    - fine
+    - ok
+    - okay
+    - alright
+    - absolutely
+- intent: chitchat/deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - not at all
+    - not right now
+    - nope
+    - no 
+    - not so sure
+    - impossible
+- intent: order_food
+  examples: |
+    - I would like to order [3](quantity) [pav bhaji](item) at [tilekar nagar](location)
+    - I would Like to order [2](quantity) [sandwich](item) at  [lane no 14, parvati colony](location)
+    - I wanted to order [a](quantity)[biryani](item) at  [modern colony , shivaji nagar](location)
+    - Can you order me [a](quantity)[pav bhaji](item)  at [VIIT college,  kapil nagar, kondwa budruk ](location)
+    - Please order me [2](quantity) [biryani](item)  
+    - Please order  [5](quantity) [sandwich](item) for me at[kamthe nagar,  kondhwa budruk](location)
+    - Would you mind ordering me [6](quantity) [biryani](item) at [film city,  goregoan road](location) please
+    - How about ordering [4](quantity) [pav bhaji](item)
+    - How about [6](quantity) [sandwich](item) near [PCCOE college](location)
+    - can you please order [2](quantity) [biryani](item)
+    - i'm intrested in ordering [10](quantity)[sardar chowk](item)
+    - wanna order [an](quantity)[biryani](item)
+    - wanted to taste your [sandwich](item)
+    - can i get [12](quantity)[biryani](item) at [Buckinghum palace](location)
+    - [1](quantity) [biryani](item) please
+ 
+  
+- synonym: buy
+  examples: |
+    - order
+    - have
+    - get
+    - eat
+    - order
+    - purchase
+    - deliver
+- synonym: at
+  examples: |
+    - near
+    - around
+    - in
+- synonym: colony
+  examples: |
+    - nagar
+    - society
+    - area
+    - road
+    - place
+    - town
+    - city
+    - village
+    - bridge
+    - lake
+
+
+
+
+
+
+
+
