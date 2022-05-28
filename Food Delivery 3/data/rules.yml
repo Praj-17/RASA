@@ -3,7 +3,7 @@ version: "2.0"
 rules:
 - rule: Activate form
   steps:
-  - intent: request_restaurant
+  - intent: order_food
   - action: restaurant_form
   - active_loop: restaurant_form
 
@@ -15,7 +15,8 @@ rules:
   - active_loop: null
   - slot_was_set:
     - requested_slot: null
-  - action: utter_submit
+  - action: action_order_food
+
  
 
 - rule: Say goodbye anytime the user says goodbye

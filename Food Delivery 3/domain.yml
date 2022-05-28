@@ -25,9 +25,21 @@ forms:
         quantity:
           - type: from_entity
             entity: quantity
+slots:
+  item:
+    type: text
+    influence_conversation: true
+  location:
+    type: text
+    influence_conversation: true
+  quantity:
+    type: text
+    influence_conversation: true
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+    - text: "Hello, how can I help you?"
+      
+
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
@@ -67,10 +79,17 @@ responses:
   utter_wrong_location:
   - text: Please input a legit  location 
 
+  utter_slots_values:
+  - text: Order placed - {quantity} {item} at {location}! Enjoy your meal!
   utter_submit:
   - text: Order placed successfully.
 actions:
+  - utter_slots_values
+  - utter_submit
+  - utter_greet
+  - action_order_food
   - restaurant_form
+  - validate_restaurant_form
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

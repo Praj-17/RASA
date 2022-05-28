@@ -90,6 +90,7 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
 - intent: order_food
   examples: |
     - I would like to order [3](quantity) [pav bhaji](item) at [tilekar nagar](location)
